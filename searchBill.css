@@ -1,0 +1,28 @@
+h1 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #c43151;
+    margin-left: 650px;
+}
+
+span{
+    font-size: 20px;
+    font-weight: 600;
+    color: #cf5557;
+    margin-left: 300px;
+}
+ 
+#client{
+    width: 200px;
+    height: 20px;
+}
+ 
+#submit{
+    background-color: #55b4cf;
+    border: none;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    margin-left: 300px;
+
+}
