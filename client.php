@@ -1,8 +1,9 @@
 <?php
-require("connect.php");
+require ("connect.php");
 
 $sql = "CREATE TABLE client (
     ID INT AUTO_INCREMENT PRIMARY KEY,
+    PHONE INT NOT NULL,
     NAMECLIENT VARChAR(50) NOT NULL,
     DATEOFBRITH DATE NOT NULL,
     CARD VARCHAR(50) NOT NULL,

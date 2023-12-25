@@ -1,8 +1,9 @@
-body{
+body {
     margin: 0;
     padding: 0;
 }
-form{
+
+form {
     background-color: #c3c8c9;
     width: 50%;
     margin-left: 350px;
@@ -10,42 +11,59 @@ form{
     border: none;
     border-radius: 8px;
 }
+
 h1 {
     padding-top: 10px;
     font-weight: 600;
     font-size: 30px;
-    padding-left: 270px;
+    padding-left: 250px;
     color: #27929c;
 }
-label{
+
+label {
     margin-left: 100px;
     color: #1c678c;
     font-size: 30px;
     font-weight: 500;
 }
 
-input{
+input {
     margin-top: 40px;
     width: 200px;
     height: 30px;
     border-radius: 10px;
 }
-#id{
+
+#id {
+    margin-left: 180px;
+}
+
+#name{
+    margin-left: 140px;
+}
+
+#date{
+    margin-left: 100px;
+}
+#card{
+    margin-left: 150px;
+}
+#address{
     margin-left: 110px;
 }
 
-#kind{
-    margin-left: 80px;
+#phone {
+    margin-left: 140px;
 }
 
-button{
+button {
     border: none;
-        border-radius: 10px;
-        background-color: #5eaed6;
-        color: #fff;
-        height: 40px;
-        width: 150px;
-        margin-left: 300px;
-        margin-top: 20px;
-        margin-bottom: 40px;
+    border-radius: 10px;
+    background-color: #5eaed6;
+    color: #fff;
+    height: 40px;
+    width: 150px;
+    margin-left: 300px;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }

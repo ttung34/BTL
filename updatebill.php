@@ -3,32 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./updateroom.css">
     <title>Update Bill</title>
 </head>
 <body>
     <form method="POST">
+        <h1>Update Bill</h1>
         <label>
-            Start time
+            Start time:
             <input type="time" name="start" id="start">
         </label><br><br>
         <label>
-            End time
+            End time:
             <input type="time" name="end" id="end">
         </label><br><br>
         <label>
-            Date
+            Date:
             <input type="date" name="dates" id="dates">
         </label><br><br>
         <label>
-            Note
+            Note:
             <input type="text" name="note" id="note">
         </label><br><br>
         <label>
-            ID Client
+            ID Client:
             <input type="number" name="client" id="client">
         </label><br><br>
         <label>
-            ID Room
+            ID Room:
             <input type="number" name="room" id="room">
         </label><br><br>
         <button name="update">Update Bill</button>
@@ -36,7 +38,7 @@
 
     <?php
 
-        require("connect.php");
+        require ("connect.php");
 
         if(isset($_POST['update']) && isset($_GET['id'])){
             $id = $_GET['id'];

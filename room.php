@@ -1,5 +1,5 @@
 <?php
-require("connect.php");
+require ("connect.php");
 
 $sql = "CREATE TABLE room (
     ID INT AUTO_INCREMENT PRIMARY KEY,

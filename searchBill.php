@@ -20,7 +20,7 @@
         {
             $client = $_GET['client'];
 
-            require "connect.php";
+            require ("connect.php");
 
             mysqli_set_charset($conn, 'UTF-8');
 

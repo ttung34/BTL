@@ -43,7 +43,7 @@
 </head>
 <body>
     <?php
-        require("connect.php");
+        require ("connect.php");
         $sql = "SELECT * FROM bill";
         $result = mysqli_query($conn, $sql);
     ?>

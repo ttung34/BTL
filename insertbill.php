@@ -3,36 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="./insertbill.css">
     <title>Bill</title>
 </head>
 <body>
     <form method="POST">
-        <label>ID
+        <h1>Thêm Bill</h1>
+        <label>ID:
             <input type="number" name="id" id="id">
         </label><br><br>
-        <label >Start
+        <label >Start:
             <input type="time" name="start" id="start">
         </label><br><br>
-        <label >End
+        <label >End:
             <input type="time" name="end" id="end">
         </label><br><br>
-        <label>Date
+        <label>Date:
             <input type="date" name="dates" id="dates">
         </label><br><br>
-        <label>Note
+        <label>Note:
             <input type="text" name="note" id="note">
         </label><br><br>
-        <label>ID_Client
+        <label>ID Client:
             <input type="number" name="client" id="client">
         </label><br><br>
-        <label >ID_Room
+        <label >ID Room:
             <input type="number" name="room" id="room">
         </label><br><br>
         <button name="bill">Bill</button>
     </form>    
 
     <?php
-        require("connect.php");
+        require ("connect.php");
 
         if(isset($_POST['bill'])){
             $id = $_POST['id'];

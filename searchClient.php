@@ -20,7 +20,7 @@
         {
             $card = $_GET['card'];
 
-            require "connect.php";
+            require ("connect.php");
 
             mysqli_set_charset($conn, 'UTF-8');
 

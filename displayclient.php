@@ -36,7 +36,7 @@
 </head>
 <body>
     <?php
-        require "connect.php";
+        require ("connect.php");
         $sql = "SELECT *FROM client";
         $result = mysqli_query($conn, $sql); 
     ?>
@@ -47,6 +47,7 @@
         <?php
         echo "<tr>";
         echo "<th>ID</th>";
+        echo "<th>Phone</th>";
         echo "<th>Name</th>";
         echo "<th>Date</th>";
         echo "<th>Card</th>";
@@ -56,6 +57,7 @@
         while ($row = mysqli_fetch_assoc($result)) {
             echo "<tr>";
             echo "<td>" . $row["ID"] . "</td>";
+            echo "<td>" . $row["PHONE"] . "</td>";
             echo "<td>" . $row["NAMECLIENT"] . "</td>";
             echo "<td>" . $row["DATEOFBRITH"] . "</td>";
             echo "<td>" . $row["CARD"] . "</td>";

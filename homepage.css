@@ -1,0 +1,15 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container_header{
+    background-color: antiquewhite;
+    display: flex;
+    gap: 10px;
+    
+}
+
+a{
+    padding-left: 100px;
+}
