@@ -10,21 +10,21 @@
 <body>
     <h1>Search Client</h1>
     <form action="" method="GET">
-        <span>Card:</span>
-        <input type="number" name="card" id="card"><br><br>
+        <span>Phone:</span>
+        <input type="number" name="phone" id="phone"><br><br>
         <input type="submit" value="Search" id="submit">
     </form>
 
     <?php
-        if(isset($_GET['card']))
+        if(isset($_GET['phone']))
         {
-            $card = $_GET['card'];
+            $phone = $_GET['phone'];
 
             require ("connect.php");
 
             mysqli_set_charset($conn, 'UTF-8');
 
-            $sql = "SELECT * FROM client WHERE CARD = '$card'";
+            $sql = "SELECT * FROM client WHERE PHONE = '$phone'";
 
             $result = $conn->query($sql);
 

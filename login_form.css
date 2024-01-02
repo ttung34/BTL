@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-body{
+
+body {
     position: relative;
     padding: 0;
     margin: 0;
     background-image: url("./img/login_background.png");
 }
 
-form{
+form {
     backdrop-filter: blur(5px);
-    background: rgba(255,255,255, 0.2);
+    background: rgba(255, 255, 255, 0.2);
     width: 30vw;
     height: 55vh;
     border-radius: 10px;
@@ -17,7 +18,7 @@ form{
     border: 1px solid black;
 }
 
-h1{
+h1 {
     font-weight: 600;
     font-size: 50px;
     padding-left: 150px;
@@ -25,17 +26,17 @@ h1{
 
 /* user */
 
-.container_user{
+.container_user {
     padding-left: 55px;
     position: relative;
 }
 
-.container_user label{
+.container_user label {
     font-weight: 400;
     font-size: 16px;
 }
 
-#user{
+#user {
     border: none;
     border-radius: 8px;
     width: 22vw;
@@ -44,7 +45,7 @@ h1{
 
 }
 
-#icon_user{
+#icon_user {
     position: absolute;
     right: 0;
     width: 90px;
@@ -88,12 +89,12 @@ h1{
     margin-top: 7px;
 }
 
-::placeholder{
+::placeholder {
     padding-left: 20px;
 }
 
 /* submit */
-#login{
+#login {
     border: none;
     width: 150px;
     height: 30px;
@@ -104,7 +105,7 @@ h1{
     margin-left: 140px;
 }
 
-a{
+a {
     color: red;
     position: absolute;
     right: 0;
@@ -113,11 +114,30 @@ a{
     text-decoration: none;
     background-color: #F0F8FF;
     width: 100px;
-    height: 30px;
+    height: 35px;
     padding-left: 20px;
     padding-top: 10px;
     border-radius: 8px;
 }
+h4{
+    color: #f46775;
+    right: 0;
+    top: 0;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes example {
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        left: 200px;
+        top: 0px;
+    }
 
 
-
+}

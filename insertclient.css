@@ -42,7 +42,7 @@ input {
     margin-left: 140px;
 }
 
-#date{
+#dates{
     margin-left: 100px;
 }
 #card{
@@ -66,4 +66,25 @@ button {
     margin-left: 300px;
     margin-top: 20px;
     margin-bottom: 40px;
+}
+
+p {
+    top: 0;
+    right: 0;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    color: #f46775;
+}
+        
+    @keyframes example {
+    0% {
+    left: 0px;
+    top: 0px;
+    }
+        
+    25% {
+    left: 200px;
+    top: 0px;
+    }
 }

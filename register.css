@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("./img/jw.jpeg");
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+
+form{
+    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.2);
+    width: 30vw;
+    height: 30vh;
+    border-radius: 10px;
+    margin-left: 37%;
+    margin-top: 10%;
+}
+h1{
+    font-weight: 600;
+    font-size: 30px;
+    color: #e94b4b;
+    margin-left: 90px;
+}
+
+.container_user p{
+    font-weight: 600;
+    font-size: 20px;
+    color: #e8e8e6;
+    margin-left: 10px;
+}
+#user{
+    border: none;
+    border-radius: 8px;
+    width: 22vw;
+    height: 4vh;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-left: 30px;
+}
+
+.container_pass p {
+    font-weight: 600;
+    font-size: 20px;
+    color: #e8e8e6;
+    margin-left: 10px;
+}
+
+#pass {
+    border: none;
+    border-radius: 8px;
+    width: 22vw;
+    height: 4vh;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-left: 30px;
+}
+
+button{
+    border-radius: 10px;
+    width: 80px;
+    height: 40px;
+    background-color: rgb(116, 209, 237);
+    color: #fff;
+    border: none;
+    margin-left: 40%;
+}
+

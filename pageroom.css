@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("./img/img_room.webp");
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+
+.container_header{
+    background-color: #FA8072;
+    display: block;
+    width: 10vw;
+    height: 100vh;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.container_header div a {
+    text-decoration: none;
+    color:#fff;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+
+
+.container_header .insert{
+    background-color: #30c5e6;
+    width: 100px;
+    height: 40px;
+    margin-top: 50px;
+    margin-left: 10px;
+    border-radius: 8px;
+    border: none;
+
+}
+.container_header .search {
+    background-color: #30c5e6;
+    width: 100px;
+    height: 40px;
+    margin-top: 50px;
+    margin-left: 10px;
+    border-radius: 8px;
+    border: none;
+}
+.container_header .display {
+    background-color: #30c5e6;
+    width: 100px;
+    height: 40px;
+    margin-top: 50px;
+    margin-left: 10px;
+    border-radius: 8px;
+    border: none;
+}

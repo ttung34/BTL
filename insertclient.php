@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./insertclient.css">
     <title>Add Client</title>
+    <style>
+
+    </style>
 </head>
 <body>
     <form method="POST">
@@ -19,13 +22,13 @@
             <input type="text" name="name" id="name">
         </label><br><br>
          <label for="">Date
-            <input type="number" name="date" id="date">
+            <input type="date" name="dates" id="dates">
         </label><br><br>
          <label for="">Card
             <input type="number" name="card" id="card">
         </label><br><br>
          <label for="">Address
-            <input type="number" name="address" id="address">
+            <input type="text" name="address" id="address">
         </label><br><br>
         <button name="add">Add Client</button>
     </form>
@@ -36,22 +39,23 @@
             $id = $_POST['id'];
             $phone = $_POST['phone'];
             $name = $_POST['name'];
-            $date = $_POST['date'];
+            $dates = $_POST['dates'];
             $card = $_POST['card'];
             $address = $_POST['address'];
 
 
-            if(!empty($id) && !empty($phone) && !empty($name) && !empty($date) && !empty($card) && !empty($address)){
+            if(!empty($id) && !empty($phone) && !empty($name) && !empty($dates) && !empty($card) && !empty($address)){
                 $sql = "INSERT INTO client(ID,PHONE,NAMECLIENT,DATEOFBRITH,CARD,ADDRESS)
-                VALUES ('$id','$phone','$name','$date','$card','$address')";
+                VALUES ('$id','$phone','$name','$dates','$card','$address')";
 
                 if ($conn->query($sql) === TRUE){
-                    echo "Successfully";
+                    echo "<p>Successfully</p>";
+                    header("refresh:1;url=displayclient.php");
                 }else{
-                    echo "Error";
+                    echo "<p>Tài khoản đã tồn tại</p>";
                 }
             }else{
-                echo "Cần nhập đủ dữ liệu để tiếp tục";
+                echo "<p>Cần nhập đủ dữ liệu để tiếp tục</p>";
             }
         }
     ?>

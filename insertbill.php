@@ -51,6 +51,7 @@
 
                 if($conn->query($sql) === TRUE){
                     echo "Successfully";
+                    header("refresh:1;url=displaybill.php");
                 }else{
                     echo "Error";
                 }

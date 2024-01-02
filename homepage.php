@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,14 +20,33 @@
         ?>
 
         <div class="container_header_room">
-            <a href="displayroom.php">Room</a>
+            <a href="pageroom.php" id="room">Room</a>
         </div>
 
+        <div class="container_header_room">
+            <a href="pageclient.php" id="room">Client</a>
+        </div>
+
+        <div class="container_header_room">
+            <a href="pagebill.php" id="room">Bill</a>
+        </div>
+
+
+        <div class="container_header_icon">
+            <i class="fa-brands fa-facebook" id="facebook"></i>
+            <i class="fa-brands fa-instagram" id="instagram" ></i>
+            <i class="fa-brands fa-youtube" id="youtube"></i>
+            <i class="fa-brands fa-tiktok" id="tiktok"></i>
+        </div>
+
+        
         <?php
             }else{
                 echo "<div><a href='login_form.php'>Login</a></div>";
             }
         ?>
+
+      
    </div>
 </body>
 </html>

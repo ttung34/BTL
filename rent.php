@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./displayroom.css">
-    <title>List Client</title>
+    <title>Document</title>
 
-    <style>
+     <style>
         td a {
             text-decoration: none;
             border: 1px solid black;
             padding: 3px;
+           
         } 
         td{
             height: 30px;
@@ -38,39 +38,34 @@
 <body>
     <?php
         require ("connect.php");
-        $sql = "SELECT *FROM client";
-        $result = mysqli_query($conn, $sql); 
+        $sql = "SELECT * FROM room";
+        $result = mysqli_query($conn, $sql);
     ?>
+
     <table border="1px solid black"
     width=50%
     align='center'>
-        <caption><p>Thông tin khách hàng</p></caption>
+        <caption><p>Thông tin phòng</p></caption>
         <?php
         echo "<tr>";
-        echo "<th>ID</th>";
-        echo "<th>Phone</th>";
-        echo "<th>Name</th>";
-        echo "<th>Date</th>";
-        echo "<th>Card</th>";
-        echo "<th>Address</th>";
-        echo "<th>Tuỳ chọn</th>";
+        echo "<th>PRICE</th>";
+        echo "<th>TYPEROOM</th>";
+        echo "<th>KIND</th>";
+        echo "<th>Thuê Phòng </th>";
         echo "</tr>";
-        while ($row = mysqli_fetch_assoc($result)) {
+
+        while ($row = mysqli_fetch_assoc($result)){
             echo "<tr>";
-            echo "<td>" . $row["ID"] . "</td>";
-            echo "<td>" . $row["PHONE"] . "</td>";
-            echo "<td>" . $row["NAMECLIENT"] . "</td>";
-            echo "<td>" . $row["DATEOFBRITH"] . "</td>";
-            echo "<td>" . $row["CARD"] . "</td>";
-            echo "<td>" . $row["ADDRESS"] . "</td>";
+            echo "<td>" . $row["PRICE"] . "</td>";
+            echo "<td>" . $row["TYPEROOM"] . "</td>";
+            echo "<td>" . $row["KIND"] . "</td>";
             echo "<td>
-            <a href='updateclient.php?id=".$row["ID"]."'>Sửa</a>
-            <a href='deleteclient.php?id=".$row["ID"]."'>Xoá</a>
+            <a href='insertclient.php'>Thuê Phòng</a>
+            
             </td>";
             echo "</tr>";
-        }
+        };
         ?>
-    </table><br>
-
+    </table><br><br>
 </body>
 </html>

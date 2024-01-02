@@ -50,8 +50,9 @@
     <caption><p>Detail Client</p></caption>
     <?php
         echo "<tr>";
-        echo "<th>ID</th>";
-        echo "<th>Name Client</th>";
+         echo "<th>ID</th>";
+        echo "<th>Phone</th>";
+        echo "<th>Name</th>";
         echo "<th>Date</th>";
         echo "<th>Card</th>";
         echo "<th>Address</th>";
@@ -60,6 +61,7 @@
         while ($row = mysqli_fetch_assoc($result)){
             echo "<tr>";
             echo "<td>" . $row["ID"] . "</td>";
+            echo "<td>" . $row["PHONE"] . "</td>";
             echo "<td>" . $row["NAMECLIENT"] . "</td>";
             echo "<td>" . $row["DATEOFBRITH"] . "</td>";
             echo "<td>" . $row["CARD"] . "</td>";

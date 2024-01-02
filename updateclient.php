@@ -9,7 +9,8 @@
 <body>
     <form  method="POST">
         <h1>Update Client</h1>
-        <label for="">Phone:
+        <label for="">
+            Phone:
             <input type="number" name="phone" id="phone">
         </label><br><br>
         <label>
@@ -25,13 +26,13 @@
         <label>Address:
             <input type="text" name="address" id="address">
         </label><br><br>
-        <button name="updateclient">Update</button>
+        <button name="update">Update</button>
     </form>
 
     <?php
         require ("connect.php");
 
-        if (isset($_POST['updateclient']) && isset($_GET['id'])){
+        if (isset($_POST['update']) && isset($_GET['id'])){
             $id = $_GET['id'];
             $phone = $_POST['phone'];
             $name = $_POST['name'];
@@ -47,8 +48,10 @@
                 CARD = '$card',
                 ADDRESS = '$address' 
                 WHERE ID = '$id'";
+                
                 if ($conn->query($sql) === TRUE) {
                     echo "Sửa dữ liệu thành công";
+                    header("refresh:1;url=displayclient.php");
                 } else {
                     echo " Lỗi: " .$conn->error;
                 }

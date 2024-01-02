@@ -38,6 +38,7 @@
 
                 if ($conn->query($sql) === TRUE){
                     echo "Thêm dữ liệu thành công";
+                    header("refresh:1;url=displayroom.php");
                 }else{
                     echo "Sai dữ liệu";
                 }

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +10,7 @@
     <title>Login</title>
 </head>
 <body>
-    <form action="" method="POST">
+      <form action="" method="POST">
         <h1>Login</h1>
         <div class="container_user">
             <label>
@@ -36,26 +35,27 @@
 
         if(isset($_POST['login'])){
             $user = $_POST['user'];
-            $pass = $_POST['pass'];
+            $pass = ($_POST['pass']);
 
-            $sql = "SELECT * FROM user WHERE user = '$user' AND pass ='$pass'";
+            $sql = "SELECT * FROM user WHERE USER = '$user' AND PASS ='$pass'";
 
             $result = $conn->query($sql);
             if($result -> num_rows == 0){
-                echo "<a href ='javascript: history.go(-1)'>Come back</a>";
+                echo "<a href ='javascript: history.go(-1)'>Tài khoản không tồn tại</a>";
                 exit;
             }
 
             $row = $result->fetch_assoc();
 
             if($pass != $row['PASS']){
-                echo "<a href ='javascript: history.go(-1)'>Come back</a>";
+                echo "<a href ='javascript: history.go(-1)'>Mật khẩu không chính xác</a>";
                 exit;
             }
             
         session_start();
         $_SESSION['USER'] = $user;
-        echo "<a href='homepage.php'>Home</a>";
+        echo "<h4>Login thành công</h4>";
+        header("refresh:1;url=homepage.php");
 
         }
     ?>

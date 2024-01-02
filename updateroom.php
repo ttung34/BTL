@@ -40,6 +40,7 @@
                 WHERE ID = '$id'";
                 if ($conn->query($sql) === TRUE) {
                     echo "Sửa dữ liệu thành công";
+                    header("refresh:1;url=displayroom.php");
                 } else {
                     echo " Lỗi: " .$conn->error;
                 }

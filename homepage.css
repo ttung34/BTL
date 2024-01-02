@@ -1,15 +1,37 @@
 body{
     margin: 0;
     padding: 0;
+    background-image: url("./img/jw.jpeg");
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-size: cover;
 }
-
 .container_header{
     background-color: antiquewhite;
     display: flex;
-    gap: 10px;
-    
+    height: 100px;
+    position: relative;
+    gap: 10%;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+a{
+    color:#c7505d ;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
 }
 
-a{
-    padding-left: 100px;
+.container_header .container_header_icon{
+    display: flex;
+    padding-left: 350px;
+    padding-top: 5px;
+    gap: 80%;
 }
+
+i{
+  font-size: 20px;
+}
+
+

@@ -1,0 +1,9 @@
+body{
+    background-image: url("./img/client.jpeg");
+}
+
+div{
+    color: brown;
+    right: 0;
+    top: 0;
+}
