@@ -7,12 +7,9 @@
     <title>Add room</title>
 </head>
 <body>
-    
+    <div class="list"><a href="./displayroom.php" id="list">Danh sách</a></div>
     <form action="" method="POST">
         <h1>Thêm Phòng</h1>
-        <label for="">ID:
-            <input type="number" name="id" id="id">
-        </label><br><br>
         <label for="">Rates Room:
             <input type="text" name="price" id="price">
         </label><br><br>
@@ -28,13 +25,12 @@
     <?php
        require ("connect.php");
         if(isset($_POST['addroom'])){
-            $id = $_POST['id'];
             $price = $_POST['price'];
             $type = $_POST['type'];
             $kind = $_POST['kind'];
             
-            if(!empty($id) && !empty($price)  && !empty($type) && !empty($kind)){
-                $sql = "INSERT INTO room(ID,PRICE,TYPEROOM,KIND) VALUES ('$id','$price','$type','$kind')";
+            if(!empty($price)  && !empty($type) && !empty($kind)){
+                $sql = "INSERT INTO room(PRICE,TYPEROOM,KIND) VALUES ('$price','$type','$kind')";
 
                 if ($conn->query($sql) === TRUE){
                     echo "Thêm dữ liệu thành công";

@@ -8,6 +8,7 @@
 
 </head>
 <body>
+        <div class="list"><a href="./displaybill.php" id="list">Danh sách</a></div>
     <h1>Search Bill</h1>
     <form action="" method="GET">
         <span>ID Client:</span>

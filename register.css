@@ -13,7 +13,7 @@ form{
     backdrop-filter: blur(5px);
     background: rgba(255, 255, 255, 0.2);
     width: 30vw;
-    height: 30vh;
+    height: 80vh;
     border-radius: 10px;
     margin-left: 37%;
     margin-top: 10%;
@@ -32,6 +32,38 @@ h1{
     margin-left: 10px;
 }
 #user{
+    border: none;
+    border-radius: 8px;
+    width: 22vw;
+    height: 4vh;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-left: 30px;
+}
+
+.container_user p {
+    font-weight: 600;
+    font-size: 20px;
+    color: #e8e8e6;
+    margin-left: 10px;
+}
+
+#name {
+    border: none;
+    border-radius: 8px;
+    width: 22vw;
+    height: 4vh;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-left: 30px;
+}
+
+.container_user p {
+    font-weight: 600;
+    font-size: 20px;
+    color: #e8e8e6;
+    margin-left: 10px;
+}
+
+#email {
     border: none;
     border-radius: 8px;
     width: 22vw;

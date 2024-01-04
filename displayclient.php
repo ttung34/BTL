@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./displayroom.css">
+    <link rel="stylesheet" href="./displayclient.css">
     <title>List Client</title>
 
     <style>
@@ -16,14 +16,17 @@
             height: 30px;
             text-align:center;
         }
-        a:hover {
-            background-color: yellow;
+      
+        a{
+            color:white;
         }
         td {
             background-color: #f08d8f;
+            color: #fff;
         }
         th{
             background-color: #8dd9f0;
+            color: #fff;
         }
         table{
             margin-top:250px;
@@ -36,6 +39,13 @@
     </style>
 </head>
 <body>
+    <div>
+     <div class="insert"><a href="./insertclient.php" id="insert">Insert</a></div>
+    <div class="search"><a href="./searchClient.php" id="insert">Search</a></div>
+    <div class="search"><a href="./deleteCheckboxclient.php" id="insert">Delete</a></div>
+    <div class="search"><a href="./homepage.php" id="insert">Home</a></div>
+    </div>
+
     <?php
         require ("connect.php");
         $sql = "SELECT *FROM client";
@@ -65,7 +75,6 @@
             echo "<td>" . $row["ADDRESS"] . "</td>";
             echo "<td>
             <a href='updateclient.php?id=".$row["ID"]."'>Sửa</a>
-            <a href='deleteclient.php?id=".$row["ID"]."'>Xoá</a>
             </td>";
             echo "</tr>";
         }

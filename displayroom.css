@@ -1,0 +1,33 @@
+body{
+    background-image: url("./img/img_room.webp");
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.insert {
+    background-color: #46b0f3;
+    width: 80px;
+    height: 30px;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 6px;
+}
+
+.search {
+    background-color: #46b0f3;
+    width: 80px;
+    height: 30px;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 6px;
+}
+
+#insert {
+    text-decoration: none;
+    color: #fff;
+    margin-top: 10px;
+    padding-left: 14px;
+}

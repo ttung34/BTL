@@ -1,0 +1,48 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url("./img/img_room.webp");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+table {
+    margin-top: 300px;
+}
+
+td {
+    height: 30px;
+    text-align: center;
+    color: #fff;
+    background-color: #f08d8f;
+}
+
+th {
+    background-color: #8dd9f0;
+    color: #fff;
+    text-align: center;
+}
+
+button {
+    border: none;
+    border-radius: 6px;
+}
+button:hover{
+    background-color: #f08d8f;
+}
+
+.list {
+    background-color: #38c1ef;
+    width: 100px;
+    height: 40px;
+    border-radius: 6px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+#list {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 10px;
+}

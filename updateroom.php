@@ -8,6 +8,7 @@
     <title>Sửa Room</title>
 </head>
 <body>
+    <div class="list"><a href="./displayroom.php" id="list">Danh sách</a></div>
     <form method="POST">
         <h1>Update Room</h1>
         <label>

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./displaybill.css">
     <title>List Bill</title>
 
       <style>
@@ -42,6 +43,18 @@
 
 </head>
 <body>
+
+        <div>
+
+            <div class="insert"><a href="./insertbill.php" id="insert">Insert</a></div>
+            <div class="search"><a href="./searchBill.php" id="insert">Search</a></div>
+            <div class="search"><a href="./deleteCheckBoxBill.php" id="insert">Delete</a></div>
+            <div class="search"><a href="./homepage.php" id="insert">Home</a></div>
+
+        </div>
+
+
+
     <?php
         require ("connect.php");
         $sql = "SELECT * FROM bill";
@@ -61,7 +74,7 @@
         echo "<th>Note</th>";
         echo "<th>ID Client</th>";
         echo "<th>ID Room</th>";
-        echo "<th>Function/th>";
+        echo "<th>Function</th>";
         echo "</tr>";
 
         while ($row = mysqli_fetch_assoc($result)){
@@ -75,7 +88,6 @@
             echo "<td>" . $row["ID_ROOM"] . "</td>";
              echo "<td>
             <a href='updatebill.php?id=".$row["ID"]."'>Sửa</a>
-            <a href='deletebill.php?id=".$row["ID"]."'>Xoá</a>
             </td>";
             echo "</tr>";
         };

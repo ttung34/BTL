@@ -7,6 +7,7 @@
     <title>Update Bill</title>
 </head>
 <body>
+        <div class="list"><a href="./displaybill.php" id="list">Danh sách</a></div>
     <form method="POST">
         <h1>Update Bill</h1>
         <label>

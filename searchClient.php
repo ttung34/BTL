@@ -8,6 +8,7 @@
 
 </head>
 <body>
+        <div class="list"><a href="./displayclient.php" id="list">Danh sách</a></div>
     <h1>Search Client</h1>
     <form action="" method="GET">
         <span>Phone:</span>

@@ -8,9 +8,10 @@
 </head>
 <body>
     <div class="container_header">
-        <div class="insert"><a href="./insertbill.css">Insert Bill</a></div>
+        <div class="insert"><a href="./insertbill.php">Insert Bill</a></div>
         <div class="search"><a href="./searchBill.php">Search Bill</a></div>
         <div class="display"><a href="./displaybill.php">List Bill</a></div>
+        <div class="display"><a href="./homepage.php">Home</a></div>
     </div>
 </body>
 </html>

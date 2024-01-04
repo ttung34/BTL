@@ -7,6 +7,7 @@
     <title>Sửa khách hàng</title>
 </head>
 <body>
+            <div class="list"><a href="./displayclient.php" id="list">Danh sách</a></div>
     <form  method="POST">
         <h1>Update Client</h1>
         <label for="">
@@ -42,7 +43,7 @@
 
             if(!empty($id) && !empty($phone)  && !empty($name) && !empty($date) && !empty($card) && !empty($address)){
                 $sql = "UPDATE client SET
-                PHONE = '$phone'
+                PHONE = '$phone',
                 NAMECLIENT = '$name',
                 DATEOFBRITH = '$date',
                 CARD = '$card',

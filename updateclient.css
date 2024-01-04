@@ -1,6 +1,10 @@
 body {
     margin: 0;
     padding: 0;
+        background-image: url("./img/client.jpeg");
+            height: 100%;
+            width: 100%;
+            background-size: cover;
 }
 
 form {
@@ -42,4 +46,18 @@ button {
     margin-left: 300px;
     margin-top: 20px;
     margin-bottom: 40px;
+}
+.list {
+    background-color: #38c1ef;
+    width: 100px;
+    height: 40px;
+    border-radius: 6px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+#list {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 10px;
 }

@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./displayroom.css">
     <title>List Room</title>
+
       <style>
         td a {
             text-decoration: none;
@@ -35,6 +37,12 @@
     </style>
 </head>
 <body>
+
+    <div class="insert"><a href="./insertroom.php" id="insert">Insert</a></div>
+    <div class="search"><a href="" id="insert">Search</a></div>
+        <div class="search"><a href="./deleteCheckBoxRoom.php" id="insert">Delete</a></div>
+            <div class="search"><a href="./homepage.php" id="insert">Home</a></div>
+
     <?php
         require ("connect.php");
         $sql = "SELECT * FROM room";
@@ -62,7 +70,6 @@
             echo "<td>" . $row["KIND"] . "</td>";
             echo "<td>
             <a href='updateroom.php?id=".$row["ID"]."'>Sửa</a>
-            <a href='deleteroom.php?id=".$row["ID"]."'>Xoá</a>
             </td>";
             echo "</tr>";
         };

@@ -7,11 +7,11 @@
     <title>Bill</title>
 </head>
 <body>
+
+    <div class="list"><a href="./displaybill.php" id="list">Danh sách</a></div>
+
     <form method="POST">
         <h1>Thêm Bill</h1>
-        <label>ID:
-            <input type="number" name="id" id="id">
-        </label><br><br>
         <label >Start:
             <input type="time" name="start" id="start">
         </label><br><br>
@@ -37,7 +37,6 @@
         require ("connect.php");
 
         if(isset($_POST['bill'])){
-            $id = $_POST['id'];
             $start = $_POST['start'];
             $end = $_POST['end'];
             $dates = $_POST['dates'];
@@ -45,9 +44,9 @@
             $id_client = $_POST['client'];
             $id_room = $_POST['room'];
 
-            if(!empty($id) && !empty($start) && !empty($end) && !empty($dates) && !empty($note) && !empty($id_client) && !empty($id_room)){
-                $sql = "INSERT INTO bill(ID,STIME,ETIME,SDATE,NOTE,ID_CLIENT,ID_ROOM)
-                VALUES ('$id','$start','$end','$dates','$note','$id_client','$id_room')";
+            if( !empty($start) && !empty($end) && !empty($dates) && !empty($note) && !empty($id_client) && !empty($id_room)){
+                $sql = "INSERT INTO bill(STIME,ETIME,SDATE,NOTE,ID_CLIENT,ID_ROOM)
+                VALUES ('$start','$end','$dates','$note','$id_client','$id_room')";
 
                 if($conn->query($sql) === TRUE){
                     echo "Successfully";

@@ -4,6 +4,7 @@ body{
     width: 100%;
     position: absolute;
     background-size: cover;
+    margin: 0;padding: 0;
 }
 
 h1 {
@@ -33,4 +34,19 @@ span {
     height: 30px;
     margin-left: 300px;
 
+}
+
+.list {
+    background-color: #38c1ef;
+    width: 100px;
+    height: 40px;
+    border-radius: 6px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+#list {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 10px;
 }
